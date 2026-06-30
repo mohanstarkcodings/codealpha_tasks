@@ -1,0 +1,70 @@
+-- The plaintext password for every sample account is: 123456
+
+INSERT INTO users (id, full_name, email, password, role, provider) VALUES
+(1, 'John Doe', 'johndoe@example.com', '$2b$10$KKZm3mgo85a4qxOKXXG4OORDu12FGrK5cMQgIwBxQLoumI2mSVEkK', 'organizer', 'local'),
+(2, 'Jane Smith', 'janesmith@example.com', '$2b$10$KKZm3mgo85a4qxOKXXG4OORDu12FGrK5cMQgIwBxQLoumI2mSVEkK', 'organizer', 'local'),
+(3, 'Alex Jones', 'alexjones@example.com', '$2b$10$KKZm3mgo85a4qxOKXXG4OORDu12FGrK5cMQgIwBxQLoumI2mSVEkK', 'organizer', 'local'),
+(4, 'Emily Brown', 'emilybrown@example.com', '$2b$10$KKZm3mgo85a4qxOKXXG4OORDu12FGrK5cMQgIwBxQLoumI2mSVEkK', 'organizer', 'local'),
+(5, 'Michael Green', 'michaelgreen@example.com', '$2b$10$KKZm3mgo85a4qxOKXXG4OORDu12FGrK5cMQgIwBxQLoumI2mSVEkK', 'organizer', 'local'),
+(6, 'Sarah White', 'sarahwhite@example.com', '$2b$10$KKZm3mgo85a4qxOKXXG4OORDu12FGrK5cMQgIwBxQLoumI2mSVEkK', 'organizer', 'local'),
+(7, 'David Black', 'davidblack@example.com', '$2b$10$KKZm3mgo85a4qxOKXXG4OORDu12FGrK5cMQgIwBxQLoumI2mSVEkK', 'organizer', 'local'),
+(8, 'Emma Stone', 'emmastone@example.com', '$2b$10$KKZm3mgo85a4qxOKXXG4OORDu12FGrK5cMQgIwBxQLoumI2mSVEkK', 'organizer', 'local'),
+(9, 'Daniel Craig', 'danielcra@example.com', '$2b$10$KKZm3mgo85a4qxOKXXG4OORDu12FGrK5cMQgIwBxQLoumI2mSVEkK', 'organizer', 'local'),
+(10, 'Chris Evans', 'chrisevans@example.com', '$2b$10$KKZm3mgo85a4qxOKXXG4OORDu12FGrK5cMQgIwBxQLoumI2mSVEkK', 'organizer', 'local'),
+(11, 'Tom Holland', 'tomholland@example.com', '$2b$10$KKZm3mgo85a4qxOKXXG4OORDu12FGrK5cMQgIwBxQLoumI2mSVEkK', 'participant', 'local'),
+(12, 'Scarlett Johansson', 'scarlettj@example.com', '$2b$10$KKZm3mgo85a4qxOKXXG4OORDu12FGrK5cMQgIwBxQLoumI2mSVEkK', 'participant', 'local'),
+(13, 'Mark Ruffalo', 'markruffalo@example.com', '$2b$10$KKZm3mgo85a4qxOKXXG4OORDu12FGrK5cMQgIwBxQLoumI2mSVEkK', 'participant', 'local'),
+(14, 'Robert Downey', 'robertdowney@example.com', '$2b$10$KKZm3mgo85a4qxOKXXG4OORDu12FGrK5cMQgIwBxQLoumI2mSVEkK', 'participant', 'local'),
+(15, 'Chris Hemsworth', 'chrishems@example.com', '$2b$10$KKZm3mgo85a4qxOKXXG4OORDu12FGrK5cMQgIwBxQLoumI2mSVEkK', 'participant', 'local'),
+(16, 'Jeremy Renner', 'jrenner@example.com', '$2b$10$KKZm3mgo85a4qxOKXXG4OORDu12FGrK5cMQgIwBxQLoumI2mSVEkK','participant', 'google'),
+(17, 'Paul Rudd', 'paulrudd@example.com', '$2b$10$KKZm3mgo85a4qxOKXXG4OORDu12FGrK5cMQgIwBxQLoumI2mSVEkK', 'participant', 'google'),
+(18, 'Brie Larson', 'blarson@example.com', '$2b$10$KKZm3mgo85a4qxOKXXG4OORDu12FGrK5cMQgIwBxQLoumI2mSVEkK', 'participant', 'local'),
+(19, 'Chadwick Boseman', 'cboseman@example.com', '$2b$10$KKZm3mgo85a4qxOKXXG4OORDu12FGrK5cMQgIwBxQLoumI2mSVEkK', 'participant', 'local'),
+(20, 'Zoe Saldana', 'zoesaldana@example.com', '$2b$10$KKZm3mgo85a4qxOKXXG4OORDu12FGrK5cMQgIwBxQLoumI2mSVEkK', 'participant', 'local');
+
+insert into users(id,full_name,email,password,role,provider) 
+values (21,'admin','admin@gmail.com','$2b$10$KKZm3mgo85a4qxOKXXG4OORDu12FGrK5cMQgIwBxQLoumI2mSVEkK','admin','local');
+
+INSERT INTO events (id, title, description, department, event_date, event_time, venue, capacity, organizer_id) VALUES
+(1, 'Tech Con 2026', 'Description for Tech Con 2026.', 'CSE', '2026-09-10', '09:00:00', 'Block 1, Hall 101', 50, 1),
+(2, 'AI Workshop', 'Description for AI Workshop.', 'IT', '2026-09-11', '10:00:00', 'Block 2, Hall 102', 55, 2),
+(3, 'Web Dev Bootcamp', 'Description for Web Dev Bootcamp.', 'AIDS', '2026-09-12', '11:00:00', 'Block 3, Hall 103', 60, 3),
+(4, 'Data Science Summit', 'Description for Data Science Summit.', 'EEE', '2026-09-13', '12:00:00', 'Block 4, Hall 104', 65, 4),
+(5, 'Cyber Security Seminar', 'Description for Cyber Security Seminar.', 'ECE', '2026-09-14', '09:00:00', 'Block 1, Hall 105', 70, 5),
+(6, 'IoT Hackathon', 'Description for IoT Hackathon.', 'MECH', '2026-09-15', '10:00:00', 'Block 2, Hall 106', 75, 6),
+(7, 'Cloud Computing Expo', 'Description for Cloud Computing Expo.', 'CSE', '2026-09-16', '11:00:00', 'Block 3, Hall 107', 80, 7),
+(8, 'Robotics Challenge', 'Description for Robotics Challenge.', 'IT', '2026-09-17', '12:00:00', 'Block 4, Hall 108', 85, 8),
+(9, 'Circuit Design Lab', 'Description for Circuit Design Lab.', 'AIDS', '2026-09-18', '09:00:00', 'Block 1, Hall 109', 90, 9),
+(10, 'Power Systems Meet', 'Description for Power Systems Meet.', 'EEE', '2026-09-19', '10:00:00', 'Block 2, Hall 110', 95, 10),
+(11, 'Embedded Systems Intro', 'Description for Embedded Systems Intro.', 'ECE', '2026-09-20', '11:00:00', 'Block 3, Hall 111', 100, 1),
+(12, 'Signal Processing Talk', 'Description for Signal Processing Talk.', 'MECH', '2026-09-21', '12:00:00', 'Block 4, Hall 112', 105, 2),
+(13, 'Mechanical Design Expo', 'Description for Mechanical Design Expo.', 'CSE', '2026-09-22', '09:00:00', 'Block 1, Hall 113', 110, 3),
+(14, 'Thermal Engg Seminar', 'Description for Thermal Engg Seminar.', 'IT', '2026-09-23', '10:00:00', 'Block 2, Hall 114', 115, 4),
+(15, 'CAD Modelling Contest', 'Description for CAD Modelling Contest.', 'AIDS', '2026-09-24', '11:00:00', 'Block 3, Hall 115', 120, 5),
+(16, 'Blockchain Basics', 'Description for Blockchain Basics.', 'EEE', '2026-09-10', '12:00:00', 'Block 4, Hall 116', 125, 6),
+(17, 'DevOps Masterclass', 'Description for DevOps Masterclass.', 'ECE', '2026-09-11', '09:00:00', 'Block 1, Hall 117', 130, 7),
+(18, 'UI/UX Design Jam', 'Description for UI/UX Design Jam.', 'MECH', '2026-09-12', '10:00:00', 'Block 2, Hall 118', 135, 8),
+(19, 'Mobile App Fest', 'Description for Mobile App Fest.', 'CSE', '2026-09-13', '11:00:00', 'Block 3, Hall 119', 140, 9),
+(20, 'Quantum Computing Intro', 'Description for Quantum Computing Intro.', 'IT', '2026-09-14', '12:00:00', 'Block 4, Hall 120', 145, 10),
+(21, 'Big Data Symposium', 'Description for Big Data Symposium.', 'AIDS', '2026-09-15', '09:00:00', 'Block 1, Hall 121', 150, 1),
+(22, 'Machine Learning Hack', 'Description for Machine Learning Hack.', 'EEE', '2026-09-16', '10:00:00', 'Block 2, Hall 122', 155, 2),
+(23, 'VLSI Design Workshop', 'Description for VLSI Design Workshop.', 'ECE', '2026-09-17', '11:00:00', 'Block 3, Hall 123', 160, 3),
+(24, 'Renewable Energy Forum', 'Description for Renewable Energy Forum.', 'MECH', '2026-09-18', '12:00:00', 'Block 4, Hall 124', 165, 4),
+(25, 'AutoCAD Championship', 'Description for AutoCAD Championship.', 'CSE', '2026-09-19', '09:00:00', 'Block 1, Hall 125', 170, 5),
+(26, 'Full Stack Marathon', 'Description for Full Stack Marathon.', 'IT', '2026-09-20', '10:00:00', 'Block 2, Hall 126', 175, 6),
+(27, 'Network Security Drill', 'Description for Network Security Drill.', 'AIDS', '2026-09-21', '11:00:00', 'Block 3, Hall 127', 180, 7),
+(28, 'AR/VR Experience Zone', 'Description for AR/VR Experience Zone.', 'EEE', '2026-09-22', '12:00:00', 'Block 4, Hall 128', 185, 8),
+(29, 'Automation Summit', 'Description for Automation Summit.', 'ECE', '2026-09-23', '09:00:00', 'Block 1, Hall 129', 190, 9),
+(30, 'Drone Tech Exhibition', 'Description for Drone Tech Exhibition.', 'MECH', '2026-09-24', '10:00:00', 'Block 2, Hall 130', 195, 10);
+
+INSERT INTO registrations (participant_id, event_id, status) VALUES
+(11, 1, 'registered'), (11, 2, 'registered'), (11, 3, 'registered'),
+(12, 4, 'registered'), (12, 5, 'registered'), (12, 6, 'registered'),
+(13, 7, 'registered'), (13, 8, 'registered'), (13, 9, 'registered'),
+(14, 10, 'registered'), (14, 11, 'registered'), (14, 12, 'registered'),
+(15, 13, 'registered'), (15, 14, 'registered'), (15, 15, 'registered'),
+(16, 16, 'registered'), (16, 17, 'registered'), (16, 18, 'registered'),
+(17, 19, 'registered'), (17, 20, 'registered'), (17, 21, 'registered'),
+(18, 22, 'registered'), (18, 23, 'registered'), (18, 24, 'registered'),
+(19, 25, 'registered'), (19, 26, 'registered'), (19, 27, 'registered'),
+(20, 28, 'registered'), (20, 29, 'registered'), (20, 30, 'registered');
