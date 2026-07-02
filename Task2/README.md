@@ -107,7 +107,7 @@ Supported Roles:
 
 ---
 
-## 📊 Reports
+## Reports
 
 ### Order Reports
 
